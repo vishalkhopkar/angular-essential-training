@@ -1,14 +1,4 @@
-<nav>
-  <a (click)="getMediaItems('')">
-    <img src="assets/04.png" class="icon" />
-  </a>
-  <a (click)="getMediaItems('Movies')">
-    <img src="assets/03.png" class="icon" />
-  </a>
-  <a (click)="getMediaItems('Series')">
-    <img src="assets/02.png" class="icon" />
-  </a>
-</nav>
+
 <header>
   <div *ngIf="mediaItems">{{ mediaItems | categoryList }}</div>
 </header>
@@ -19,3 +9,8 @@
     [mediaItem]="mediaItem"
     (delete)="onMediaItemDelete($event)"></mw-media-item>
 </section>
+<footer>
+  <a routerLink="/add">
+    <img src="assets/01.png" class="icon"/>
+  </a>
+</footer>
