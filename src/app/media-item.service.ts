@@ -10,10 +10,12 @@ export class MediaItemService {
   constructor(private http: HttpClient) {}
 
   get(medium: string) {
+    /*
     const getOptions = {
       params: { medium }
     };
-    return this.http.get<MediaItemsResponse>('mediaitems', getOptions)
+    */
+    return this.http.get<MediaItemsResponse>('http://127.0.0.1:8000/media/')
       .pipe(
         map((response: MediaItemsResponse) => {
           return response.mediaItems;

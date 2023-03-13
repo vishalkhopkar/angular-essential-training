@@ -27,3 +27,9 @@ body {
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.label {
+  background-color: #999999;
+  color: white;
+  padding: 2px 6px;
+}

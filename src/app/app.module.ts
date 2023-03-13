@@ -26,8 +26,7 @@ import { CategoryListComponent } from './category-list.component';
     CategoryListPipe
   ],
   providers: [
-    { provide: lookupListToken, useValue: lookupLists },
-    { provide: HttpXhrBackend, useClass: MockXHRBackend }
+    { provide: lookupListToken, useValue: lookupLists }
   ],
   bootstrap: [
     AppComponent
